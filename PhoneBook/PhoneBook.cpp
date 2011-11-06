@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
 
 	for (vector<Phone>::const_iterator it = phoneNumbers.begin();
 			it != phoneNumbers.end(); it++) {
-		cout << it->name << " " << it->phoneNumber << endl;
+		cout << it->name << "=" << it->phoneNumber << endl;
 	}
 
 	return 0;
