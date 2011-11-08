@@ -9,10 +9,13 @@
 #define PHONEBOOK_H_
 
 
-class PhoneBook {
+class phonebook {
+
 public:
-	PhoneBook();
-	virtual ~PhoneBook();
+	phonebook();
+	virtual ~phonebook();
+	int createPhoneBook();
+
 };
 
 #endif /* PHONEBOOK_H_ */

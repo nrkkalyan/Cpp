@@ -10,7 +10,7 @@
  *      Author: Koosie
  */
 
-#include "PhoneBook.h"
+#include "phonebook.h"
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -24,11 +24,21 @@ struct Phone {
 	long phoneNumber;
 };
 
+
+phonebook::phonebook() {
+	// TODO Auto-generated constructor stub
+
+}
+
+phonebook::~phonebook() {
+	// TODO Auto-generated destructor stub
+}
+
 bool numberComparator(const Phone& phone1, const Phone& phone2) {
 	return phone1.phoneNumber > phone2.phoneNumber;
 }
 
-int main(int argc, char **argv) {
+int phonebook::createPhoneBook() {
 	cout << "PhoneBook application";
 
 	ifstream in("phonebook.txt");
